@@ -13,19 +13,16 @@ img{
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
+    padding: 2px;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    letter-spacing: 10;
+    letter-spacing: 5;
 }
 .section__titulo{
     text-align: center;
     font-size: 40px;
     color: grey;
-}
-.contenedor{
-    margin: auto;
-    width: 98%;
 }
 /*----------------------------Estilos del header ----------------------------*/
 .header{
@@ -38,7 +35,6 @@ h1,h2,h3,h4,h5,h6{
 .logo, .icon-menu{
     margin: 5px;
     color: #fff;
-    letter-spacing: 7px;
 }
 .icon-menu{
     display: block;
@@ -114,14 +110,13 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 30px;
     text-align: center;
 }
-.info__columna .info__titulo{
-    letter-spacing: 3px;
+.info__img{
+    margin: auto;
 }
 /*----------------------------Estilos de hombre ----------------------------*/
 .hombre__columna{
     position: relative;
     margin-bottom: 30px;
-    text-align: center;
 }
 .hombre__descripcion{
     position: absolute;
@@ -136,11 +131,9 @@ h1,h2,h3,h4,h5,h6{
 .hombre__titulo{
     font-size: 25px;
     margin: 5px;
-    letter-spacing: 3px;
-    margin-top: 60px;
 }
 
-/*----------------------------Estilos de hombre ----------------------------*/
+/*----------------------------Estilos de footer ----------------------------*/
 .footer{
     background: #333;
     color: #fff;
@@ -162,12 +155,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*----------------------------Estilos responsive ----------------------------*/
-
-@media(min-width:650px){
+@media(min-width:340px){
     .logo{
-        font-size: 52px;
+        font-size: 40px;
     }
-    .banner__titulo {
+    .banner__titulo{
         font-size: 30px;
         letter-spacing: 5px;
         margin: 5px 0;
@@ -175,55 +167,56 @@ h1,h2,h3,h4,h5,h6{
     .banner__txt{
         display: block;
         font-size: 20px;
-        margin: 7px;
+        margin: 10px 0;
     }
     .info{
         display: flex;
         justify-content: space-between;
-        margin-top: -80px;
+        margin-top: -70px;
     }
     .info__columna{
         width: 32%;
     }
     .info__titulo{
-        font-size: 30px;
-        margin: 5px o;
+        letter-spacing: 3px;
     }
     .section__titulo{
         width: 100%;
     }
     .hombre{
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        margin-top: 0px;
     }
     .hombre__columna{
         width: 48%;
     }
     .footer .social [class^="icon-"]{
-        margin:0 10px;
+        margin: 0 10px;
     }
 }
-
-@media(min-width:768px){
-  .banner__titulo{
-      font-size: 50px;
-  }  
-  .hombre__titulo{
-      font-size: 30px;
-  }
-  .hombre__txt{
-      font-size: 18px;
-  }
-  .footer .social [class^="icon-"]{
-    margin:0 25px;
+@media(min-width:747px){
+    .logo{
+        font-size: 50px;
+    }
+    .banner__titulo{
+        font-size: 50px;
+    }
+    .hombre{
+        margin-left: 130px;
+      }
+    .hombre__titulo{
+        font-size: 35px;
+        letter-spacing: 3px;
+        text-align: left;
+    }
 }
-}
-
-@media(min-width:1024px){
+@media(min-width:980px){
+    .logo{
+        font-size: 60px;
+    }
     .contenedor{
-        width: 1000px;
+        margin: auto;
+        width: 800px;
     }
     .nav{
         position: static;
@@ -232,19 +225,21 @@ h1,h2,h3,h4,h5,h6{
     .menu{
         display: flex;
     }
-    .menu__link{
-        font-size: 20px;
+    .hombre{
+        margin-left: 150px;
     }
     .icon-menu{
         display: none;
     }
     .banner__titulo{
         font-size: 60px;
-    }  
-    .info__titulo{
-        font-size: 40px;
     }
     .hombre__titulo{
-        font-size: 40px;
+        font-size: 30px;
     }
+}
+@media(min-width:1179px){
+    .logo{
+        font-size: 70px;
+    } 
 }
